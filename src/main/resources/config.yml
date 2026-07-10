@@ -1,0 +1,11 @@
+worlds:
+  lobby:
+    build: false
+    break: false
+    interact: false
+    buckets: false
+    pvp: false
+    explosions: false
+    fire: false
+    pistons: false
+    entity-change-block: false
