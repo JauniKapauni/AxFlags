@@ -1,4 +1,4 @@
-package listener;
+package de.jaunikapauni.axflags.listener;
 
 import de.jaunikapauni.axflags.AxFlags;
 import org.bukkit.event.EventHandler;

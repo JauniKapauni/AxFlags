@@ -1,6 +1,6 @@
 package de.jaunikapauni.axflags;
 
-import listener.*;
+import de.jaunikapauni.axflags.listener.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class AxFlags extends JavaPlugin {

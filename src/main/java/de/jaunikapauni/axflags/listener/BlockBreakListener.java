@@ -1,21 +1,21 @@
-package listener;
+package de.jaunikapauni.axflags.listener;
 
 import de.jaunikapauni.axflags.AxFlags;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.BlockBurnEvent;
+import org.bukkit.event.block.BlockBreakEvent;
 
-public class BlockBurnListener implements Listener {
+public class BlockBreakListener implements Listener {
 
     AxFlags reference;
-    public BlockBurnListener(AxFlags reference){
+    public BlockBreakListener(AxFlags reference){
         this.reference = reference;
     }
 
     @EventHandler
-    public void onBlockBurn(BlockBurnEvent e){
+    public void onBlockBreak(BlockBreakEvent e){
         String world = e.getBlock().getWorld().getName();
-        if(!reference.getFlag(world, "fire")){
+        if(!reference.getFlag(world, "break")){
             e.setCancelled(true);
         }
     }
