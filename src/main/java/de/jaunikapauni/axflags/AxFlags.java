@@ -2,6 +2,7 @@ package de.jaunikapauni.axflags;
 
 import listener.BlockBreakListener;
 import listener.BlockPlaceListener;
+import listener.PlayerInteractListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class AxFlags extends JavaPlugin {
@@ -12,6 +13,7 @@ public final class AxFlags extends JavaPlugin {
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new BlockPlaceListener(this), this);
         getServer().getPluginManager().registerEvents(new BlockBreakListener(this), this);
+        getServer().getPluginManager().registerEvents(new PlayerInteractListener(this), this);
     }
 
     @Override
