@@ -19,6 +19,8 @@ public final class AxFlags extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new EntityExplodeListener(this), this);
         getServer().getPluginManager().registerEvents(new BlockBurnListener(this), this);
         getServer().getPluginManager().registerEvents(new BlockIgniteListener(this), this);
+        getServer().getPluginManager().registerEvents(new BlockPistonExtendListener(this), this);
+        getServer().getPluginManager().registerEvents(new BlockPistonRetractListener(this), this);
     }
 
     @Override
