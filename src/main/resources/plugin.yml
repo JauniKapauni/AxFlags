@@ -1,0 +1,11 @@
+name: AxFlags
+description: $description
+prefix: AxFlags
+version: '${version}'
+
+main: de.jaunikapauni.axflags.AxFlags
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ JauniKapauni ]
+website: https://github.com/JauniKapauni
