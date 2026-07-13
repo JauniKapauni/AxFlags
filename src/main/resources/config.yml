@@ -13,3 +13,4 @@ worlds:
     item-pickup: false
     hunger: false
     damage: false
+    mob-spawning: false
