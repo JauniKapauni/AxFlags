@@ -28,6 +28,7 @@ public final class AxFlags extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new EntityDamageListener(this), this);
         getServer().getPluginManager().registerEvents(new CreatureSpawnListener(this), this);
         getServer().getPluginManager().registerEvents(new PlayerDeathListener(this), this);
+        getServer().getPluginManager().registerEvents(new WeatherChangeListener(this), this);
     }
 
     @Override
