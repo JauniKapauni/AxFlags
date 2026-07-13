@@ -9,3 +9,5 @@ worlds:
     fire: false
     pistons: false
     entity-change-block: false
+    item-drop: false
+    item-pickup: false
