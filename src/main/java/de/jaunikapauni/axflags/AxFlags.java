@@ -24,6 +24,8 @@ public final class AxFlags extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new EntityChangeBlockListener(this), this);
         getServer().getPluginManager().registerEvents(new PlayerDropItemListener(this), this);
         getServer().getPluginManager().registerEvents(new EntityPickupItemListener(this), this);
+        getServer().getPluginManager().registerEvents(new FoodLevelChangeListener(this), this);
+        getServer().getPluginManager().registerEvents(new EntityDamageListener(this), this);
     }
 
     @Override

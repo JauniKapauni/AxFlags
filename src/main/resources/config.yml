@@ -11,3 +11,5 @@ worlds:
     entity-change-block: false
     item-drop: false
     item-pickup: false
+    hunger: false
+    damage: false
