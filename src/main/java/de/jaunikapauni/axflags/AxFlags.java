@@ -1,5 +1,6 @@
 package de.jaunikapauni.axflags;
 
+import de.jaunikapauni.axflags.command.ReloadCommand;
 import de.jaunikapauni.axflags.listener.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -36,6 +37,7 @@ public final class AxFlags extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new CreatureSpawnListener(this), this);
         getServer().getPluginManager().registerEvents(new PlayerDeathListener(this), this);
         getServer().getPluginManager().registerEvents(new WeatherChangeListener(this), this);
+        getCommand("reload").setExecutor(new ReloadCommand(this));
     }
 
     @Override
@@ -55,5 +57,11 @@ public final class AxFlags extends JavaPlugin {
             }
             flags.put(w, worldFlags);
         }
+    }
+
+    public void reloadFlags(){
+        reloadConfig();
+        flags.clear();
+        loadFlags();
     }
 }
